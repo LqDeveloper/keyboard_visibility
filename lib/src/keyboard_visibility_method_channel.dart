@@ -11,7 +11,7 @@ import 'keyboard_visibility_platform_interface.dart';
 class MethodChannelKeyboardVisibility extends KeyboardVisibilityPlatform {
   final eventChannel = const EventChannel('keyboard_visibility');
 
-  bool _isInitialized = false;
+  static bool _isInitialized = false;
 
   static final _onChangeController = StreamController<KeyboardInfo>.broadcast();
 
